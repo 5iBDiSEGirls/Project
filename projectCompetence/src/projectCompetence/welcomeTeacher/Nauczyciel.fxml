@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.NauczycielController">
+   <children>
+      <SplitPane dividerPositions="0.13819095477386933" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView>
+                     <image>
+                        <Image url="@../../../../../../../Desktop/projekt/resize-img.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="498.0" layoutY="10.0" mnemonicParsing="false" onAction="#goWyloguj" prefHeight="33.0" prefWidth="64.0" text="but" />
+                  <ImageView fitHeight="28.0" fitWidth="57.0" layoutX="502.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../../../../../../../Desktop/projekt/images%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.709731543624161" prefHeight="340.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TabPane prefHeight="338.0" prefWidth="420.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <tabs>
+                                  <Tab text="Home">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="7.0" layoutY="6.0" text="Aktualności" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="31.0">
+                                             <image>
+                                                <Image url="@../../../../../../../Desktop/projekt/home.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                  </Tab>
+                                  <Tab text="Plan">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ScrollPane layoutX="103.0" layoutY="55.0" prefHeight="309.0" prefWidth="420.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <content>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                                                  </content>
+                                                </ScrollPane>
+                                             </children></AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab text="Kontakt">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ImageView fitHeight="68.0" fitWidth="69.0" layoutX="32.0" layoutY="21.0">
+                                                   <image>
+                                                      <Image url="@../../../../../../../Desktop/projekt/user.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label layoutX="139.0" layoutY="38.0" text="E-mail" />
+                                                <TextArea layoutX="180.0" layoutY="34.0" prefHeight="26.0" prefWidth="154.0" />
+                                                <TextArea layoutX="180.0" layoutY="66.0" prefHeight="116.0" prefWidth="200.0" />
+                                                <Button layoutX="180.0" layoutY="155.0" mnemonicParsing="false" text="Wyślij" />
+                                                <Button layoutX="23.0" layoutY="261.0" mnemonicParsing="false" text="Edytuj" />
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <SplitPane dividerPositions="0.14285714285714285" layoutX="5.0" layoutY="31.0" orientation="VERTICAL" prefHeight="338.0" prefWidth="170.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <MenuButton layoutX="35.0" layoutY="10.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="168.0" text="Dzienniki" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" text="Klasa 1A" />
+                                              <MenuItem mnemonicParsing="false" text="Klasa 1B" />
+                                                <MenuItem mnemonicParsing="false" text="Klasa 2A" />
+                                                <MenuItem mnemonicParsing="false" text="Klasa 2B" />
+                                                <MenuItem mnemonicParsing="false" text="Klasa 3A" />
+                                                <MenuItem mnemonicParsing="false" text="Klasa 3B" />
+                                            </items>
+                                          </MenuButton>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <ScrollPane layoutY="28.0" prefHeight="285.0" prefWidth="168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                                            </content>
+                                          </ScrollPane>
+                                       </children></AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

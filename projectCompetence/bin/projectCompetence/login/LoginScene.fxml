@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectCompetence.login.LoginController">
+   <children>
+      <BorderPane layoutX="-15.0" layoutY="-107.0" minHeight="200.0" minWidth="400.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="80.0">
+         <center>
+            <GridPane prefHeight="253.0" prefWidth="434.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.0" minWidth="10.0" prefWidth="78.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="404.0" minWidth="10.0" prefWidth="322.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="labelLogin" text="Login:" GridPane.rowIndex="1" />
+                  <Label fx:id="labelHaslo" text="Hasło:" GridPane.rowIndex="2" />
+                  <TextField fx:id="textLogin" text="nazwisko@leggo.com" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="logLab" text="Logowanie">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <PasswordField fx:id="textHaslo" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <Button fx:id="loginButton" layoutX="448.0" layoutY="302.0" mnemonicParsing="false" onAction="#loginButtonAction" text="Zaloguj" />
+   </children>
+</AnchorPane>
